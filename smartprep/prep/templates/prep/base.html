@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartprep</title>
+    <link rel="stylesheet" href="{% static 'prep/styles/base.css' %}">
+    {% block site_css %}{% endblock %}
+</head>
+<body>
+	<div id="navbar">
+		<h1 id="headline">
+			Smartprep<br> <span id="text-highlight">Smart durch die Gimy-Prüfung!</span>
+		</h1>
+		<div>
+			<a href="#">Login</a>
+			<a href="#">über uns</a>
+			<a href="#">Lernpunkte</a>
+			<a href="#">Test</a>
+		</div>
+	</div>
+
+	<div id= "image-container">
+		<img id="header-image" src="" alt="BILD">
+	</div>
+	
+	<div id="text-container">
+			üser Text!
+	</div>
+
+	<h1>{% block main_heading %}{% endblock %}</h1> 
+
+	<main>
+		{% block header_content %}{% endblock %}
+		{% block body %}{% endblock %}
+	</main>
+</body>
+
+</html>
