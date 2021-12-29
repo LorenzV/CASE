@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{% static 'prep/styles/base.css' %}">
+	{% block site_css %}{% endblock %}
+</head>
+<body>
+	<div class="navbar">
+		<h1 class="headline">
+			Smartprep<br> <span class="text-highlight">Smart durch die Gymi-Prüfung!</span>
+		</h1>
+		<div>
+			<a href="#">Login</a>
+			<a href="#">über uns</a>
+			<a href="#">Lernpunkte</a>
+			<a href="#">Test</a>
+		</div>
+	</div>
+
+	<div class="navbar-text">{% block main_content %}{% endblock %}</div>
+	{% block second_content %}{% endblock %}
+
+	{% block third_content %}{% endblock %}
+
+	<div class="navbar-foot">
+		test	
+	</div>
+</body>
+</html>
