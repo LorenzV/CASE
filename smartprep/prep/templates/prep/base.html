@@ -1,19 +1,26 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smartprep</title>
-    <link rel="stylesheet" href="{% static 'prep/styles/base.css' %}">
-    {% block site_css %}{% endblock %}
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smartprep</title>
+	<link rel="stylesheet" href="base.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+
+	
+	
 </head>
+
 <body>
-	<div id="navbar">
-		<h1 id="headline">
-			Smartprep<br> <span id="text-highlight">Smart durch die Gimy-Prüfung!</span>
+	<div class="navbar">
+		<h1 class="headline">
+			Smartprep<br> <span class="text-highlight">Smart durch die Gymi-Prüfung!</span>
 		</h1>
+		
+
 		<div>
 			<a href="#">Login</a>
 			<a href="#">über uns</a>
@@ -21,21 +28,45 @@
 			<a href="#">Test</a>
 		</div>
 	</div>
-
-	<div id= "image-container">
-		<img id="header-image" src="" alt="BILD">
-	</div>
 	
-	<div id="text-container">
-			üser Text!
+<div class="navbar-text">
+	<div class="text-container">
+		Bereite dich bei uns für die Gymiprüfung vor<br>
+		<span class="text-front">Mach jetzt die Standortbestimmung, um deinen individuellen Lernplan zu bekommen</span><br>
+		<br>
+		
+		
+		<button class="button-23" role="button">Start Now!</button>
+		
+	</div>
+	<div class= "image-container">
+		<img class="header-image" src="header.jpg">
 	</div>
 
-	<h1>{% block main_heading %}{% endblock %}</h1> 
+</div>
+<div class="navbar-text">
+	Individueller Lernplan
+	
+	
+	
 
-	<main>
-		{% block header_content %}{% endblock %}
-		{% block body %}{% endblock %}
-	</main>
+	<div>
+		Übungen sowie Schritt für Schritt Lernvideos
+	</div>
+
+
+</div>
+<div class="navbar-text">
+	Test Text<br>
+	test weiter untern<br>
+	
+	
+</div>
+
+<div class="navbar-foot">
+	test	
+</div>
+
+
 </body>
-
 </html>
