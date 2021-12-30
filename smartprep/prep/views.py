@@ -1,15 +1,21 @@
 from django.shortcuts import render
 
+from prep.models import Uebung
+
 
 # Create your views here.
 
 
 def home(request):
-    faecher =[
-    {'title': 'Mathematik'},
-    {'title': 'Deutsch'}
-    ]
+        
     return render(request, 'prep/home.html', {
-        'faecher': faecher
     })
+
+def fach(request):
+    
+    
+    return render(request, 'prep/fach.html', {
+    })
+
+
 

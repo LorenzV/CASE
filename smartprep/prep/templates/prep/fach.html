@@ -1,0 +1,22 @@
+{% extends 'prep/base/base.html' %}
+
+{% load static %}
+
+{% block title %}Mathematik{% endblock %}
+
+{% block site_css %}
+  <link rel="stylesheet" href="{% static 'prep/styles/base.css' %}">
+{% endblock %}
+
+{% block main_content %}
+<h1>Mathematikübungen</h1>
+<p>Hier wird die Übung sein. Das CSS muss hierfür noch erstellt werden.</p>
+{% endblock %}
+
+{% block second_content %}
+<p>Hier wird ein Inputfield sein und ein Bestätigungsknopf.</p>
+{% endblock %}
+
+{% block third_content %}
+<P>Hier wird ein Knopf für die Theorie sein, sowie ein "Nächste Übung"-Knopf</P>
+{% endblock %}
