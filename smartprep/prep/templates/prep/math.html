@@ -17,13 +17,7 @@
   {% if show_uebung %}
   <ol>
       {% for uebung_item in uebung %}
-      <ul class= "uebung-item">
-        <article>
-          <div class="uebung-summary">
-            <h3><a href="http://127.0.0.1:8000/math/" class="uebung-list">{{ uebung_item.id}}. {{ uebung_item.titel }}</a></h3>
-          </div>
-        </article>
-      </ul>
+      {% include 'prep/includes/uebung-item.html' with id=uebung_item.id titel=uebung_item.titel slug=uebung_item.slug %}
       {% endfor %}
   {% else %}
   <p>Keine Übungen vorhanden.</p>
