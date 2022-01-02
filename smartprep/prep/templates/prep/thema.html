@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %}{{ uebung_titel }}{% endblock %}
+{% block title %}{{ thema_name }}{% endblock %}
 
 {% block site_css %}
   <link rel="stylesheet" href="{% static 'prep/styles/math.css' %}">
@@ -12,8 +12,8 @@
 
 {% block main_content %}
 
-{% if uebung_found %}
-<h1>{{ uebung_titel }}</h1>
+{% if thema_found %}
+<h1>{{ thema_name }}</h1>
 {% else %}
 
 <p>Keine Übung mit diesem Namen vorhanden.</p>
@@ -22,20 +22,11 @@
 {% endblock %}
 
 {% block second_content %}
-<h2>{{ uebung_frage }}</h2>
-<form>
-  <ul>
-    {{ form.as_p }}
-  </ul>
-  <div class= check-actions>
-    <button>Überprüfen</button>
-  </div>
-</form>
-
+<h2>{{ thema_inhalt }}</h2>
 {% endblock %}
 
 {% block third_content %}
-<div>Folgende Theorie steht zu diesem Thema zur Verfügung:</div>
+<div>Folgende Uebung steht zu diesem Thema zur Verfügung:</div>
 
 {% endblock %}
 

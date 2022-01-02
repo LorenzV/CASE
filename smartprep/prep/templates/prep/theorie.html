@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %}Mathematik{% endblock %}
+{% block title %}Theorieübersicht{% endblock %}
 
 {% block site_css %}
   <link rel="stylesheet" href="{% static 'prep/styles/math.css' %}">
@@ -10,21 +10,27 @@
 
 
 {% block main_content %}
-<h1>Mathematikübungen</h1>
+<h1>Theorie</h1>
 {% endblock %}
 
 {% block second_content %}
-  <div>Folgende Übungen stehen zur Verfügung:</div>
+  <div>Folgende Theorie steht zur Verfügung:</div>
   <ol>
-      {% for uebung_item in uebung %}
-      {% include 'prep/includes/uebung-item.html' with id=uebung_item.id titel=uebung_item.titel slug=uebung_item.slug %}
+      {% for thema_item in thema|dictsort:"name" %}
+      {% include 'prep/includes/thema-detail.html' with id=thema_item.id name=thema_item.name slug=thema_item.slug %}
       {% endfor %}
   </ol>
 {% endblock %}
 
 {% block third_content %}
-<P>Hier kann ein Theorie-Knopf sein.</P>
+<P>Zu den Übungen</P>
 {% endblock %}
+
+
+
+
+
+
 
 
 

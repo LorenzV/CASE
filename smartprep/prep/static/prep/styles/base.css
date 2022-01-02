@@ -44,11 +44,26 @@ padding-top: 3%;
 color: white;
 background-color: rgb(7, 21, 27);
 }
-a {
+.btn-login {
 color: rgb(255, 255, 255);
 text-decoration: overline;
 margin-left: 16px;
 }
+.btn-uebung {
+  color: rgb(255, 255, 255);
+  text-decoration: overline;
+  margin-left: 16px;
+  }
+.btn-uns {
+  color: rgb(255, 255, 255);
+  text-decoration: overline;
+  margin-left: 16px;
+  }
+.btn-theorie {
+   color: rgb(255, 255, 255);
+   text-decoration: overline;
+   margin-left: 16px;
+  }
 .text-highlight {
 font-size: 14px;
 }
