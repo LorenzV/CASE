@@ -10,12 +10,12 @@
 
 
 {% block main_content %}
-<h1>Mathematikübungen</h1>
+<div class="text-container">Mathematikübungen</div>
 {% endblock %}
 
 {% block second_content %}
-  <div>Folgende Übungen stehen zur Verfügung:</div>
-  <ol>
+<div class = "text-third">Folgende Übungen stehen zur Verfügung:</div>
+  <ol class= "uebung-list">
       {% for uebung_item in uebung %}
       {% include 'prep/includes/uebung-item.html' with id=uebung_item.id titel=uebung_item.titel slug=uebung_item.slug %}
       {% endfor %}
@@ -23,7 +23,7 @@
 {% endblock %}
 
 {% block third_content %}
-<P>Hier kann ein Theorie-Knopf sein.</P>
+<div><a href="{% url 'theorie' %}"class="btn-theorie">Hier </a>findest du die Theorie</div>
 {% endblock %}
 
 

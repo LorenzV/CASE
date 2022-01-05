@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap");
 
-.uebung-list{
+.theorie-list{
     color: black;
     text-decoration: underline;
     font-size: 30px;
@@ -9,4 +9,3 @@
 .btn-theorie{
     color: black;
 }
-

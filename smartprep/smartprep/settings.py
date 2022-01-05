@@ -56,9 +56,8 @@ ROOT_URLCONF = 'smartprep.urls'
 
 TEMPLATES = [
     {
-        'DIRS': [str(BASE_DIR.joinpath('templates'))],
+        'DIRS': [str(BASE_DIR.joinpath('templates')), 'users/templates'],
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -134,5 +133,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # config/settings.py
 LOGIN_REDIRECT_URL = '/home/'
-LOGOUT_REDIRECT_URL = '/home/' 
-
+LOGOUT_REDIRECT_URL = '/login/' 

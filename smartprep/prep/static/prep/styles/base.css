@@ -1,82 +1,77 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap");
-
-
-body {
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0%;
-    padding: 0%;
-}
-
-a:hover {
-    text-decoration: underline;
+body{
+  font-family: 'Open Sans'; 
 }
 .header-image {
 width: auto;
-height: 300px;
-object-fit: cover;
-display: block;
-
+height: 500px;
+object-fit:cover;
 } 
+
+.content-image {
+  width: auto;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  
+  } 
 .headline {
 color: rgb(255, 255, 255);
+font-size: 30px;
 }
 .image-container {
-
-padding: 8px;
+  width: 50%;
+  height: auto;
+  padding: 8px;
 }
 .navbar {
-display: flex;
+display:flex;
 justify-content: space-between;
 align-items: center; 
 color:white;
 padding-left: 5%;
 padding-right: 5%;
 background-color: rgb(7, 21, 27);
+}
 
-}
-.navbar-foot {
-padding-left: 5%;
-padding-right: 5%;
-padding-top: 3%;
-color: white;
-background-color: rgb(7, 21, 27);
-}
-.btn-login {
+.btn-base {
 color: rgb(255, 255, 255);
 text-decoration: overline;
 margin-left: 16px;
 }
-.btn-uebung {
-  color: rgb(255, 255, 255);
-  text-decoration: overline;
-  margin-left: 16px;
-  }
-.btn-uns {
-  color: rgb(255, 255, 255);
-  text-decoration: overline;
-  margin-left: 16px;
-  }
-.btn-theorie {
-   color: rgb(255, 255, 255);
-   text-decoration: overline;
-   margin-left: 16px;
-  }
-  .btn-home {
-    color: rgb(255, 255, 255);
-   }
+.btn-base:hover {
+  text-decoration: underline;
+}
 .text-highlight {
 font-size: 14px;
 }
 .text-container {
 background-color: rgb(255, 255, 255);
-font-size: 30px;
+font-size: 50px;
 
 }
-.navbar-text {
+
+.text-second {
+  background-color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+
+}
+
+.text-third {
+  display: flex;
+  justify-content: space-between;
+  align-items: top; 
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+
+}
+.first-content {
     display: flex;
-    justify-content: space-between;
-    align-items: top;  
+    justify-content: space-evenly;
+    align-items: center;  
     background-color: rgb(255, 255, 255);
     color:rgb(0, 0, 0);
     padding-left: 5%;
@@ -84,47 +79,41 @@ font-size: 30px;
     padding-top: 5%;
     padding-bottom: 5%;
 }
+.second-content {
+  justify-content: space-between;
+  align-items: top;  
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.third-content {
+  
+  justify-content: space-between;
+  align-items: top;  
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 .text-front {
-    font-size: 14px;
+    font-size: 30px;
 }
 
-
-
-
-.button-23 {
-  background-color: #108b0b;
-  border: 1px solid #222222;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  padding: 13px 23px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
+.navbar-foot {   
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#999;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  color: white;
+  background-color: rgb(7, 21, 27);
 }
-
-.button-23:focus-visible {
-    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-    transition: box-shadow .2s;
-  }
-
-.button-23:active {
-  background-color: #F7F7F7;
-  border-color: #000000;
-  transform: scale(.96);
-}
-
-

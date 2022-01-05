@@ -11,29 +11,42 @@
 {% block main_content %}
 
 <div class="text-container">
-    Bereite dich bei uns für die Gymiprüfung vor<br>
-    <span class="text-front">Mach jetzt die Standortbestimmung, um deinen individuellen Lernplan zu bekommen</span><br>
+    Bereite dich bei uns für die Gymiprüfung vor!<br>
+    <span class="text-front">Um dich ideal auf die Gymiprüfung vorzubereiten,
+      kannst Du bei uns unzählige Übungen sowie Theorie und Lernvideos nutzen!</span><br>
     <br>
-    <button class="button-23" role="button">Start Now!</button>
+    <span class="text-front"><a href="{% url 'register' %}" >Registrier</a> dich noch heute!</span>
 </div>
 <div class= "image-container">
     <img class="header-image" src="{% static 'prep/images/header.jpg' %}">
 </div>
+
 {% endblock %}
 
 {% block second_content %}
-
-<div class="navbar-text">
-	Individueller Lernplan
-	<div>
-		Übungen sowie Schritt für Schritt Lernvideos
-	</div>
+<div class="text-second">
+  Was wir dir bieten: <br>
+</div>
+<div class="text-third">
+  <div>Individueller Lernplan <br>
+    <p><img class="content-image" src="{% static 'prep/images/calendar.jpg' %}"></p>
+  </div>
+  <div> Übungen zu allen wichtigen Themen <br>
+  <p><img class="content-image" src="{% static 'prep/images/uebung.jpg' %}"></p>
+  </div>
+</div>
+<div class="text-third">
+  <div> Theorie zu allen Themen <br>
+    <p><img class="content-image" src="{% static 'prep/images/theorie.jpg' %}"></p>
+  </div>
+  <div> Unterstützung durch den Livechat<br>
+  <p><img class="content-image" src="{% static 'prep/images/chat.jpg' %}"></p>
+  </div>
 </div>
 {% endblock %}
 
 {% block third_content %}
-<div class="navbar-text">
-	Test Text<br>
-	test weiter unten
-</div>
+
+
+
 {% endblock %}

@@ -1,5 +1,8 @@
 from django.db import models
 from django.db.models.deletion import CASCADE
+from django.contrib.auth.models import User
+
+
 
 # Create your models here.
 
@@ -20,7 +23,10 @@ class Uebung(models.Model):
     fach = models.TextField()
     thema = models.ForeignKey(Thema, on_delete=models.SET_NULL, null=True)
     frage = models.TextField(max_length=200)
-    antwort = models.TextField()
+    antwort = models.TextField() 
+    username = models.ManyToManyField(User, blank=True, null=True)
     
     def __str__(self):
         return f'{self.titel}'
+
+

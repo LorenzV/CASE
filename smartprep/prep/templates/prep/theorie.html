@@ -5,16 +5,16 @@
 {% block title %}Theorieübersicht{% endblock %}
 
 {% block site_css %}
-  <link rel="stylesheet" href="{% static 'prep/styles/math.css' %}">
+  <link rel="stylesheet" href="{% static 'prep/styles/theorie.css' %}">
 {% endblock %}
 
 
 {% block main_content %}
-<h1>Theorie</h1>
+<div class="text-container">Theorie</div>
 {% endblock %}
 
 {% block second_content %}
-  <div>Folgende Theorie steht zur Verfügung:</div>
+<div class = "text-third">Folgende Theorie steht zur Verfügung:</div>
   <ol>
       {% for thema_item in thema|dictsort:"name" %}
       {% include 'prep/includes/thema-detail.html' with id=thema_item.id name=thema_item.name slug=thema_item.slug %}
@@ -23,7 +23,7 @@
 {% endblock %}
 
 {% block third_content %}
-<P>Zu den Übungen</P>
+<div><a href="{% url 'math' %}"class="btn-theorie">Hier </a>findest du die Übungen</div>
 {% endblock %}
 
 

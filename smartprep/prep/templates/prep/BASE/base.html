@@ -13,25 +13,25 @@
 <body>
 	<div class="navbar">
 		<h1 class="headline">
-			<a class="btn-home" href="{% url 'home' %}" >Smartprep</a><br>
+			<a class="btn-base" href="{% url 'home' %}" >Smartprep</a><br>
 			<span class="text-highlight">Smart durch die Gymi-Prüfung!</span>
 		</h1>
 		<div>
-			<a href="" class="btn-login">Login </a>
-			<a href="{% url 'math' %}"class="btn-uebung">Übungen</a>
-			<a href="{% url 'theorie' %}"class="btn-theorie">Theorie</a>
-			<a href="#" class="btn-uns">Über uns</a>
+			<a href="{% url 'login' %}" class="btn-base">Login </a>
+			<a href="{% url 'math' %}"class="btn-base">Übungen</a>
+			<a href="{% url 'theorie' %}"class="btn-base">Theorie</a>
+			<a href="{% url 'logout' %}"class="btn-base">Logout</a>
 		</div>
 	</div>
 
-	<div class="navbar-text">{% block main_content %}{% endblock %}</div>
+	<div class="first-content">{% block main_content %}{% endblock %}</div>
 	
-	{% block second_content %}{% endblock %}
+	<div class="second-content">{% block second_content %}{% endblock %}</div>
 
-	{% block third_content %}{% endblock %}
+	<div class="third-content">{% block third_content %}{% endblock %}</div>
 
 	<div class="navbar-foot">
-		test	
+	CASE Projektarbeit 2022 Tolic und Vögeli 	
 	</div>
 </body>
 </html>
