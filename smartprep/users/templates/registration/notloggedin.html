@@ -10,12 +10,17 @@
 {% endblock %}
 
 {% block main_content %}
-<h3>Um Zugriff auf die Übungen zu haben, müssen Sie sich <a href="{% url 'login' %}">einloggen.</a></h3>
-<p>Don't have an account? Create one <a href="/register">here!</a></p> 
-
+<div class="text-container">Leider sind sie nicht angemeldet!</div>
 {% endblock %}
 
+
 {% block second_content %}
+<div class="keinaccount">
+  Um Zugriff auf die Übungen und die Theorie zu haben, müssen Sie sich <a href="{% url 'login' %}">einloggen.</a>
+</div>
+<div class ="keinaccount">
+  Haben Sie noch keinen Account? Erstellen sie einen <a href="/register">hier!</a>
+</div>
 
 {% endblock %}
 

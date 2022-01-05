@@ -13,32 +13,35 @@
 {% block main_content %}
 
 {% if uebung_found %}
-<h1>{{ uebung_titel }}</h1>
+<div class="text-container">{{ uebung_titel }}</div>
 {% else %}
-
-<p>Keine Übung mit diesem Namen vorhanden.</p>
+<div class="text-container">Keine Übung mit diesem Namen gefunden</div>
 {% endif %}
+
 
 {% endblock %}
 
 {% block second_content %}
 
-<h2>{{ uebung_frage }}</h2>
-<form  method="POST">
-  {% csrf_token %}
-  <ul>
-    {{ form.as_p }} 
-  </ul>
-  <div class= "check-actions">
-    <button>Überprüfen</button>
-  </div>
-</form>
+<div class="uebung-frage">{{ uebung_frage }}</div>
+<div class = "antwort-feld">
+  <form  method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class= "check-actions">
+      <button class= "überprüfen">Überprüfen</button>
+    </div>
+  </form>
+</div>
+
+
 
 {% endblock %}
 
 {% block third_content %}
-<div>Folgende Theorie steht zu diesem Thema zur Verfügung:</div>
-
+<div class="change-text">
+<a href="{% url 'theorie' %}"class="btn-theorie">Hier </a>findest du die Theorie</div>
+</div>
 {% endblock %}
 
 

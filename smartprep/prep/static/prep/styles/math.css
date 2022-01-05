@@ -9,4 +9,41 @@
 .btn-theorie{
     color: black;
 }
+.uebung-frage{
+    margin: auto;
+    padding: 10px;
+    height: 100px;
+    width: 60%;
+    border-color: black;
+    border-radius: 20px;
+    border-style: solid;
+    font-size: 30px;
+    
+}
+.antwort-feld{
+    margin: auto;
+    padding: 10px;
+    height: 100px;
+    width: 60%;
+    font-size: 30px;
+}
+.change-text{
+    font-size: 30px;
+}
+.überprüfen{
+    font-size: 20px;
+}
+#id_antwort{
+    padding: 10px;
+    height:50px ;
+    width: 200px;
+    border-radius: 20px;
+    border-style: solid;
+    overflow: hidden;
+    resize: both;
+    font-size: 30px;
+
+}
+
+
 
