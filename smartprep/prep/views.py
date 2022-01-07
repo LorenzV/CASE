@@ -65,17 +65,10 @@ def uebung(request, uebung_slug):
         else:
             antwort = request.POST.__getitem__('antwort')          
             if antwort == selected_uebung.antwort:
-                antwort_form = AntwortForm(request.POST)
-                """current_user = request.user
-                print(current_user.username)
-                username = Uebung.objects.get_or_create(username=current_user)
-                selected_uebung.username.add(username)"""
-                
+                antwort_form = AntwortForm(request.POST)               
                 return redirect("/math")
             else:
                 antwort_form = AntwortForm(request.GET)
-                
-
 
         return render(request,'prep/uebung.html', {
                     'uebung_found': True,
